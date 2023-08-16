@@ -1,0 +1,397 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+
+    /*========== COLORS ==========*/
+    --main-color: #02897A;
+    --gradient-color: linear-gradient(
+                         #EDEDED 100%,
+                         #FFFFFF 0.01);
+    --title-color: #22343D;
+    --text-color: #22343D;
+    --white-color: #fff;
+    --body-color: #ededed;
+
+    /*========== Font and typography ==========*/
+    /*0.5rem = 8px | 1rem = 16px*/
+    --body-font: 'Poppins', sans-serif;
+    --second-font: 'Lora', serif;
+    --biggest-font-size: 2.25rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 1rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Z-index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+
+/*=============== Responsive typography ===============*/
+/* @media screen and (min-width: 1024px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --normal-font-size: 1.1rem;
+        --small-font-size: 0.9rem;
+    }
+} */
+
+/*=============== BASE ===============*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: var(--normal-font-size);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+section {
+    padding: 5rem 8%;
+}
+
+.btn {
+    background: var(--main-color);
+    color: var(--white-color);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight:var(--font-semi-bold);
+}
+
+.transparent {
+    border: 1px solid var(--main-color);
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+header {
+    padding: 0 8%;
+    background: var(--body-color);
+    border-bottom-left-radius: 32%;
+    border-bottom-right-radius: 32%;
+}
+
+footer {
+    padding: 3rem 8% 1rem 8%;
+}
+
+.title {
+    color: var(--title-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*=============== HEADER & NAV ===============*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.light .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    color: var(--title-color);
+}
+
+.dark .logo {
+    color: var(--white-color);
+}
+
+
+.nav__lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav__lists ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__lists ul li a {
+    color: var(--text-color);
+    font-size:var(--small-font-size);
+}
+
+.dark ul li a {
+    color: var(--white-color);
+}
+
+
+.toggle {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    background: #d3d3d3;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.toggle i {
+    font-size: 1rem;
+    width: 50%;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    z-index: var(--z-tooltip);
+}
+
+.toggle .ball {
+    position: absolute;
+    left: 3px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.checkbox {
+    display: none;
+}
+
+/* Light mode */
+.light {
+    background:#fafafa;
+}
+
+.light .toggle {
+    background: linear-gradient(145deg, #e1e1e1,#fff);
+    box-shadow: inset 0 0 4px #132739;
+}
+
+
+.light .toggle .fa-sun {
+    color:#fafafa;  
+    transition: all 0.5s;
+}
+
+.light .toggle .fa-moon {
+    color: #151d2a;
+}
+
+.light .toggle .ball {
+    background:#151d2a;
+}
+
+/* dark mode */
+
+
+.dark {
+    background: rgb(31,46,53);
+    color: var(--white-color);
+}
+
+.dark header {
+    background: linear-gradient(#22343D 100%, #43434300 0.01%);
+}
+
+.dark .toggle {
+    background: #151d2a;
+    box-shadow: inset 0 0 4px #e6e6e6;
+   
+}
+
+.dark .toggle .fa-sun {
+    color:#fafafa
+}
+
+.dark .toggle .fa-moon {
+    color: #151d2a;
+}
+
+.dark .toggle .ball {
+    background:#fafafa;
+    transform: translateX(30px);
+}
+/*===============  Hero SECTIONS ===============*/
+
+.hero__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0 ;
+}
+
+.hero__text {
+    flex: 0.8;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero__img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero__text h1 {
+    font-size: var(--biggest-font-size);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+
+.buttons a {
+    color: var(--main-color);
+}
+
+.buttons a i {
+    margin-right: 5px;
+}
+
+/*===============  Hero SECTIONS ===============*/
+
+.hero__product {
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero__product-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.product i {
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+.product:nth-child(2) i {
+    background: #4D8DFF;
+}
+
+.product:nth-child(3) i {
+    background: #740A76;
+}
+
+.product:nth-child(4) i {
+    background: #F03E3D;
+}
+
+.hero__product .btn {
+    margin-top: 3rem;
+}
+
+
+/*===============  Xoshimjonov O SECTIONS ===============*/
+
+
+
+
+
+
+
+
+
+
+
+/*===============  Rustam SECTIONS ===============*/
+
+
+
+
+
+
+/*===============  Kamronbek SECTIONS ===============*/
+
+
+
+
+
+
+
+/*===============  Xon SECTIONS ===============*/
+
+
+
+
+
+
+/*===============  Akmal SECTIONS ===============*/
+
+
+
+
+
+
+/*===============  MIKE SECTIONS ===============*/
+
+
+
+
+
+/*===============   ?  SECTIONS ===============*/
+
+
+
+/*===============  Abduaziz SECTIONS ===============*/
+
+
+
+
+
+
+
+
+/*===============  Xurshid FOOTER ===============*/

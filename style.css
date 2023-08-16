@@ -336,7 +336,57 @@ nav {
 
 /*===============  Xoshimjonov O SECTIONS ===============*/
 
+.manegmant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
 
+.manegmant-text{
+    >p{
+        color: #22343D;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    }
+    >h2{
+        color: #22343D;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+}
+
+.manegmant__title{
+    margin-top: 40px;
+    >h5{
+        color: #22343D;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 162.5% */
+margin-bottom: 20px;
+    }
+    >p{
+        width: 400px;
+        color: #22343D;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+    }
+}
+
+.title1{
+    margin-top: 100px;
+}
 
 
 

@@ -388,6 +388,23 @@ line-height: 26px; /* 162.5% */
     margin-top: 100px;
 }
 
+.dark .manegmant-text{
+    >p{
+        color: #fff;
+    }
+    >h2{
+        color: #fff;
+    }
+    >.manegmant__title{
+        >p{
+            color: #fff;
+        }
+        >h5{
+            color: #fff;
+        }
+    }
+}
+
 
 
 

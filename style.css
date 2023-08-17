@@ -459,8 +459,41 @@ line-height: 26px; /* 162.5% */
 /*===============  Kamronbek SECTIONS ===============*/
 
 
+.collab__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.collab__text {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+.collab__text span {
+    font-weight: var(--font-semi-bold);
+}
+
+.collab__text h3 {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+.dark .collab__text h3 {
+    color: var(--white-color);
+}
+
+.collab__img {
+    width: 60%;
+}
+
+.collab__img img {
+    width: 100%;
+}
 
 
 

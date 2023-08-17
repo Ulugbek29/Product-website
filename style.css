@@ -945,37 +945,41 @@ color: orange;
 
 /*===============  Abduaziz SECTIONS ===============*/
 
-.green-box-section {
-    padding:  6rem 15%;
-}
-
-.green-container {
-    background: var(--main-color);
+.booster-box{
+    border-radius: 32px;
+    background: #02897A;
+    width: 968px;
+    height: 345px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem;
-    border-radius: 2rem;
+    justify-content: space-evenly;
+    margin: 150px auto;
+    padding: 0;
 }
 
-.green-text {
-    width: 60%;
+.btn00{
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    color: #02897A;
+    padding: 10px 33px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
-.green-text h2 {
-    color: var(--white-color);
-    font-size: var(--biggest-font-size);
+.text-inside-box{
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 151.4%; 
+    padding-bottom: 40px;
 }
 
-.green-text .btn {
-    margin-top: 3rem;
-    font-size: var(--normal-font-size);
+.left-booster{
+    padding: 49px 0 0 51px;
 }
-
-.green-img {
-    width: 40%;
-}
-
 
 
 

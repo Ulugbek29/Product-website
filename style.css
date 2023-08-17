@@ -105,6 +105,9 @@ footer {
     text-align: center;
 }
 
+.dark .title {
+    color: var(--white-color);
+}
 /*=============== HEADER & NAV ===============*/
 
 nav {
@@ -222,7 +225,7 @@ nav {
 }
 
 .dark .toggle {
-    background: #151d2a;
+    background: rgb(31,46,53);
     box-shadow: inset 0 0 4px #e6e6e6;
    
 }
@@ -336,6 +339,71 @@ nav {
 
 /*===============  Xoshimjonov O SECTIONS ===============*/
 
+.manegmant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.manegmant-text >p{
+        color: #22343D;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+   .manegmant-text > h2{
+        color: #22343D;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+
+
+.manegmant__title{
+    margin-top: 40px;
+}
+  .manegmant__title  >h5{
+        color: #22343D;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 162.5% */
+margin-bottom: 20px;
+}
+  .manegmant__title  > p{
+        width: 400px;
+        color: #22343D;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+ }
+
+.title1{
+    margin-top: 100px;
+}
+
+.dark .manegmant-text > p{
+        color: #fff;
+}
+   .dark .manegmant-text >h2{
+        color: #fff;
+    }
+   .dark .manegmant__title>p{
+            color: #fff;
+        }
+        .dark .manegmant__title > h5{
+            color: #fff;
+        }
+    
+
 
 
 
@@ -382,6 +450,10 @@ nav {
     align-items: center;
 }
 
+.dark .card_2-title h2 {
+    color: var(--white-color);
+}
+
 
 
 /*===============  Kamronbek SECTIONS ===============*/
@@ -400,30 +472,44 @@ nav {
 
 
 /*===============  Akmal SECTIONS ===============*/
-.strategies{
-    width: 1100px;
-    height: 550px;
-}
+
 .strategies-text{
-    width: 75%;
-    height: 77px;
-    margin-left: 11%;
+   text-align: left;
+}
+
+.strategies-text .title {
+    text-align: left;
 }
 .strategies-cate{
-    width: 1050px;
-    height: 70%;
-    margin:0 auto;
     margin-top: 3%;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 5%;
+    gap: 2rem;
 }
 .strategies-list{
-    width: 248px;
-    height: px;
+    width: 33%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 0 0 3px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.strategies-list div {
+    padding: 1.5rem;
+}
+
+.strategies-list img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
     border-radius: 5px;
 }
+
 .circle{
     width:6%;
     height: 20px;
@@ -455,3 +541,45 @@ nav {
 
 
 /*===============  Xurshid FOOTER ===============*/
+.footer{
+    padding: 5rem 8%;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 33px;
+    margin-left: 10px;
+}
+.footer-top{
+    display: flex;
+   justify-content: space-between;
+}
+.footer-top-right{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-list-item{
+    font-size: var(--small-font-size);
+    font-family: var(--body-font);
+}
+.input{
+    margin-top: 30px;
+    width: 325px;
+    height: 48px;
+    border: 1px solid #BCD0E5;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 37px;
+}

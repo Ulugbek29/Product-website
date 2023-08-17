@@ -499,6 +499,149 @@ line-height: 26px; /* 162.5% */
 
 /*===============  Xon SECTIONS ===============*/
 
+.qep{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.qep_head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.border-radius{
+    background: linear-gradient(#EDEDED, #FAFAFA);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 60%;
+    z-index: -10;
+}
+
+.dark .border-radius{
+    background: linear-gradient(#22343D, #1F2E35);
+}
+
+.qep_title{
+    color: var(--title-color);
+}
+
+.qep_head-subtitle{
+    width: 542px;
+    text-align: center;
+}
+
+.qep_body{
+    width: 100%;
+    padding: 50px;
+    padding-top: 100px;
+}
+
+.qep_body-box{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.qep_body-content{
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+    margin-top: 40px;
+}
+
+.qep_body-content_img{
+    width: 98px;
+    height: 98px;
+}
+
+.qep_body-content_info-box{
+    transform: translateY(15px);
+    display: inline-block;
+    height: 40px;
+    width: 260px;
+    background: var(--white-color);
+    border-radius: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    -webkit-box-shadow: -4px 14px 53px 11px rgba(34, 60, 80, 0.13);
+-moz-box-shadow: -4px 14px 53px 11px rgba(34, 60, 80, 0.13);
+box-shadow: -4px 14px 53px 11px rgba(34, 60, 80, 0.13);
+}
+
+.qep_body-content_info-text{
+    width: 245px;
+    height: 24px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 10px;
+    transform: translateY(5px);
+
+}
+
+
+.chat-simvol-left{
+    background: var(--white-color);
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+    position: absolute;
+    border-radius: 50%;
+    top: 27px;
+    left: 25px;
+}
+
+.chat-simvol-right{
+    background: var(--white-color);
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+    position: absolute;
+    border-radius: 50%;
+    top: 27px;
+    left: 200px;
+}
+
+.chat-small-simvol-right{
+    background: var(--white-color);
+    width: 15px;
+    height: 15px;
+    z-index: 1000;
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+    left: 220px;
+}
+
+.chat-small-simvol-left{
+    background: var(--white-color);
+    width: 15px;
+    height: 15px;
+    z-index: 1000;
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+    left: 5px;
+}
+
+.dark .qep_body-content_info-box,
+.dark .chat-simvol-left,
+.dark .chat-small-simvol-left,
+.dark .chat-small-simvol-right,
+.dark .chat-simvol-right{
+    color: #1F2E35;
+}
 
 
 
@@ -554,279 +697,284 @@ line-height: 26px; /* 162.5% */
 
 
 
-/*===============  MIKE SECTIONS ===============*/
-.price-table{
-    width: 100%;
-    height: 600px;
-}
-.section-price{
-    width: 100%;
-    height: 150px;
-}
-.section-list-1{
-    font-family: Poppins;
-font-size: 34px;
-font-weight: 700;
-line-height: 51px;
-letter-spacing: 0px;
-text-align: center;
+/*===============  Husanboy SECTIONS ===============*/
 
+.dark .card-top-title {
+    color: var(--white-color);
 }
-.section-list-2{
-    font-family: Poppins;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0px;
 
-color: rgba(34, 52, 61, 1);
-text-align: center;
-position: relative;
+.dark .card-top-subtitle {
+    color: var(--white-color);
 }
-.price-table-boxes{
-    width: 100%;
-    height: 448px;
-}
-.boxes-par{
-    padding-left: 150px;
-    gap: 50px;
+
+.cards {
+    margin-bottom: 50px;
     display: flex;
-}
-.box-1{
-    border-radius: 20px;
-    width: 26%;
-    height: 400px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
-
-}
-.box-2{
-    border-radius: 20px;
-    background: rgba(2, 137, 122, 1);
-    width: 26%;
-    height: 400px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
-
-}
-.box-3{
-    border-radius: 20px;
-    width: 26%;
-    height: 400px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
-
-}
-.box-list{
-    
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .card-top {
     text-align: center;
-    
-
-}
-.category{
-
-    font-family: Poppins;
-font-size: 24px;
-font-weight: 700;
-line-height: 40px;
-letter-spacing: 0px;
-
-
-}
-.brief{
-    position: relative;
-   
+    margin-bottom: 50px;
+    margin-top: 150px;
+  }
+  .card-top-title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: normal;
+    color: #22343d;
+  }
+  .card-top-subtitle {
+    color: #22343d;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 8px;
+  }
+  .card-bottom {
+    display: flex;
+    align-items: center;
     text-align: center;
-    font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-line-height: 40px;
-letter-spacing: 0px;
-
-}
-.num{
-position: relative;
-bottom: 20px;
-right: 50px;
-color: rgba(2, 137, 122, 1);
-font-family: Poppins;
-font-size: 76px;
-font-weight: 700;
-line-height: 100px;
-letter-spacing: 0.20000000298023224px;
-text-align: center;
-}
-.dollar{
-    position: relative;
-    bottom: 90px;
-    right: 20px;
-font-family: Inter;
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0.10000000149011612px;
-
-}
-.per{
-    font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0.10000000149011612px;
-position: relative;
-bottom: 93px;
-left: 20px;
-color: rgba(175, 175, 175, 1);
-}
-.operators{
-    position: relative;
-    bottom: 70px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 500;
-line-height: 22px;
-letter-spacing: 0.20000000298023224px;
-
-}
-.btn-green{
-    position: relative;
-    bottom: 30px ;
-    left: 55px;
-    width: 150px;
-    height: 50px;
-    background-color: rgba(2, 137, 122, 1);
-    border-radius: 15px;
-    text-align: center;
-
-}
-.btn-green p{
-    color: white;
-    font-family: Montserrat;
-font-size: 18px;
-font-weight: 600;
-line-height: 22px;
-letter-spacing: 0em;
-position: relative;
-top: 13px;
-
-}
-.box-list{
-    
-    text-align: center;
-    
-
-}
-.category-2{
-color: white;
-    font-family: Poppins;
-font-size: 24px;
-font-weight: 700;
-line-height: 40px;
-letter-spacing: 0px;
-
-
-}
-.brief-2{
-    color: white;
-    position: relative;
-    text-align: center;
-    font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-line-height: 40px;
-letter-spacing: 0px;
-
-}
-.num-2{
-position: relative;
-bottom: 20px;
-right: 50px;
-color: white;
-font-family: Poppins;
-font-size: 76px;
-font-weight: 700;
-line-height: 100px;
-letter-spacing: 0.20000000298023224px;
-text-align: center;
-}
-.dollar-2{
-    color: white;
-    position: relative;
-    bottom: 90px;
-    right: 20px;
-font-family: Inter;
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0.10000000149011612px;
-
-}
-.per-2{
-    font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0.10000000149011612px;
-position: relative;
-bottom: 93px;
-left: 20px;
-color: rgba(175, 175, 175, 1);
-}
-.operators-2{
-    
-    position: relative;
-    bottom: 70px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 500;
-line-height: 22px;
-letter-spacing: 0.20000000298023224px;
-
-}
-.btn-green-2{
-    position: relative;
-    bottom: 30px ;
-    left:50px;
-    width: 150px;
-    height: 50px;
-    background-color: white;
-    border-radius: 15px;
-    text-align: center;
-
-}
-.btn-green-2 p{
-    color: rgba(2, 137, 122, 1) ;
-    font-family: Montserrat;
-font-size: 18px;
-font-weight: 600;
-line-height: 22px;
-letter-spacing: 0em;
-position: relative;
-top: 13px;
-
-}
-.num-3{
-    position: relative;
-    right: 70px;
-    bottom: 20px;
-    color: rgba(2, 137, 122, 1);
-    font-family: Poppins;
+    gap: 3rem;
+  }
+  .card-one,
+  .card-two,
+  .card-three {
+    max-width: 322px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 24px 73px 32px 73px;
+    border-radius: 8px;
+    transition: 1s ease-in-out;
+  }
+  .card-one:hover {
+    border-radius: 32px;
+    background: #02897a;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transform: scaleX(90%);
+  }
+  .card-one:hover h4 {
+    color: #fff;
+  }
+  .card-one:hover h2 {
+    color: #fff;
+  }
+  .card-one:hover h5 {
+    color: #fff;
+  }
+  .card-one:hover p {
+    color: #fff;
+  }
+  .card-one:hover li {
+    color: #fff;
+  }
+  .card-one:hover .card-btn {
+    color: #02897a;
+    background-color: #fff;
+  }
+  .card-two:hover {
+    border-radius: 32px;
+    background: #02897a;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  .card-two:hover h4 {
+    color: #fff;
+  }
+  .card-two:hover h2 {
+    color: #fff;
+  }
+  .card-two:hover h5 {
+    color: #fff;
+  }
+  .card-two:hover p {
+    color: #fff;
+  }
+  .card-two:hover li {
+    color: #fff;
+  }
+  .card-two:hover .card-btn {
+    color: #02897a;
+    background-color: #fff;
+  }
+  .card-three:hover {
+    border-radius: 32px;
+    background: #02897a;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transform: scaleX(90%);
+  }
+  .card-three:hover h4 {
+    color: #fff;
+  }
+  .card-three:hover h2 {
+    color: #fff;
+  }
+  .card-three:hover h5 {
+    color: #fff;
+  }
+  .card-three:hover p {
+    color: #fff;
+  }
+  .card-three:hover li {
+    color: #fff;
+  }
+  .card-three:hover .card-btn {
+    color: #02897a;
+    background-color: #fff;
+  }
+  .card-btn:hover {
+    transform: scaleX(70%);
+    border-radius: 30%;
+  }
+  
+  .card-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card-bottom-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000;
+  }
+  .card-bottom-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #000;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .card-box-number {
     font-size: 76px;
     font-weight: 700;
     line-height: 100px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center; 
+    letter-spacing: 0.2px;
+    color: #02897a;
+  }
+  .card-box-title {
+    color: #02897a;
+    text-align: start;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+  }
+  .card-box-subtitle {
+    color: var(--second-text, #afafaf);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+  }
+  .card-ul-li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: #22343d;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+  .card-btn {
+    padding: 11px 19px;
+    background-color: #02897a;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin-top: 38px;
+    transition: 0.7s;
+  }
+
+
+
+/*===============   Mike  SECTIONS ===============*/
+
+.client__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
+.client__section > p {
+text-align: center;
+}
 
+.client-list {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
 
+.client-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+border: 1px solid #dedede;
+border-radius: 1rem;
+}
 
-/*===============   ?  SECTIONS ===============*/
+.stars i {
+color: orange;
+}
 
+.client-item > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
+.client-item div h3 {
+    color: var(--main-color);
+}
 
 /*===============  Abduaziz SECTIONS ===============*/
 
+.green-box-section {
+    padding:  6rem 15%;
+}
 
+.green-container {
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    border-radius: 2rem;
+}
 
+.green-text {
+    width: 60%;
+}
 
+.green-text h2 {
+    color: var(--white-color);
+    font-size: var(--biggest-font-size);
+}
+
+.green-text .btn {
+    margin-top: 3rem;
+    font-size: var(--normal-font-size);
+}
+
+.green-img {
+    width: 40%;
+}
 
 
 

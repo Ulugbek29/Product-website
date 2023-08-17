@@ -395,3 +395,42 @@ nav {
 
 
 /*===============  Xurshid FOOTER ===============*/
+.footer{
+    padding: 5rem 8%;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 33px;
+    margin-left: 10px;
+}
+.footer-top{
+    display: flex;
+   justify-content: space-between;
+}
+.footer-top-right{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-list-item{
+    font-size: var(--small-font-size);
+    font-family: var(--body-font);
+}
+.input{
+    margin-top: 30px;
+    width: 325px;
+    height: 48px;
+    border: 1px solid #BCD0E5;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 37px;
+}
